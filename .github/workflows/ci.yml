@@ -32,4 +32,6 @@ jobs:
         run: pytest tests/test_model.py --disable-warnings -q
 
       - name: Run API tests
+        env:
+          PYTHONPATH: ${{ github.workspace }} 
         run: pytest tests/test_api.py --disable-warnings -q
