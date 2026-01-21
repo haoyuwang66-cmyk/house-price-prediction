@@ -27,6 +27,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run model tests
+        env:
+          PYTHONPATH: ${{ github.workspace }} 
         run: pytest tests/test_model.py --disable-warnings -q
 
       - name: Run API tests
