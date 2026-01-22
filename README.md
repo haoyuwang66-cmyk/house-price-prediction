@@ -21,14 +21,17 @@ The project includes:
 
 ### 1. Clone the repository
 git clone https://github.com/haoyuwang66-cmyk/house-price-prediction.git
+
 cd house-price-service
 
 ### 2. Create and activate a virtual environment
 python3 -m venv venv
+
 source venv/bin/activate
 
 ### 3. Install dependencies
 pip install --upgrade pip
+
 pip install -r requirements.txt
 
 ### 4. Train the model (optional, if you want to retrain it)
@@ -44,9 +47,11 @@ Select an exsiting model that you want to use and copy the relative path, in app
 uvicorn app.main:app --reload
 
 Health check:
+
 GET /health
 
 Prediction:
+
 POST /predict with JSON payload:
 
 {
@@ -58,10 +63,16 @@ POST /predict with JSON payload:
   "longitude": 121.54287
 }
 
+Or try with http://127.0.0.1:8000/docs
+
+Terminate the Uvicorn app: CTRL + C
+
 ### 7. Run Tests
 
 Model tests
+
 pytest tests/test_model.py --disable-warnings -q
 
 API tests
+
 pytest tests/test_api.py --disable-warnings -q
