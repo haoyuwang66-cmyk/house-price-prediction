@@ -33,6 +33,8 @@ pytest
 
 datetime
 
+httpx
+
 
 ## Setup
 
