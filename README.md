@@ -17,6 +17,23 @@ The project includes:
 - pip
 - Dependencies (install via `requirements.txt`):
 
+fastapi
+
+pydantic
+
+scikit-learn
+
+pandas
+
+numpy
+
+joblib
+
+pytest
+
+datetime
+
+
 ## Setup
 
 ### 1. Clone the repository
