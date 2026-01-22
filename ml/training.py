@@ -14,7 +14,6 @@ DATA_PATH = Path("data/Real estate.csv")
 
 def build_features(df):
     df = df.copy()
-    df["house_age_squared"] = df["X2 house age"] ** 2
     return df
 
 def main():
